@@ -1,3 +1,4 @@
+// https://www.hackerrank.com/challenges/designer-pdf-viewer/problem
 function designerPdfViewer(h, word) {
     let wordArr = Array.from(word);
     let myMap = new Map();
