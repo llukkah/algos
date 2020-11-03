@@ -1,0 +1,14 @@
+//////////////////////////////////////////////////
+/////////Create a function which /////////////////
+/////////takes a given array (`arr`) /////////////
+///////////and an integer (`num`).////////////////
+//////////Remove `num` amount of array ///////////
+///////////////elements from the beginning ///////
+///////of `arr` and place them at the end. ////////
+/////////The output should be a new array./////////
+//////////////////////////////////////////////////
+const cutAndPaste = (arr, num) => {
+    let arrSave = arr.slice(0, num);
+    arr.splice(0, num);
+    return arr.concat(arrSave);
+  };
