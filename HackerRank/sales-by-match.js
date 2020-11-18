@@ -26,7 +26,13 @@
 // Sample Output
 // 3
 
-
+// PSEUDOCODE
+// set a count for how many pairs
+// sort array
+// for loop to iterate through array
+// check if ar[i] is the same as the next one over.
+// if it is, continue and count plus 1.
+// if not, continue anyway
 
 function sockMerchant(n, ar) {
 let count = 0;
@@ -39,4 +45,4 @@ let count = 0;
 
 }
 
-console.log(sockMerchant(7, [10, 20, 20, 10, 10, 30, 50, 10, 20]))
+console.log(sockMerchant(9, [10, 20, 20, 10, 10, 30, 50, 10, 20]))
