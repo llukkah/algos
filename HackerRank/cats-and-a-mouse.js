@@ -32,7 +32,13 @@
 // Returns
 // string: Either 'Cat A', 'Cat B', or 'Mouse C'
 
-
+//PSEUDOCODE
+//check the absolute difference of mouse's location and cat A's location
+//save to variable
+//check the absolute difference of mouse's location and cat B's location
+//save to variable
+// if the same, print Mouse C
+// if not, print Cat A or Cat B, respectively
 function catAndMouse(x, y, z) {
 
 
