@@ -14,11 +14,10 @@
 // z = 4
 // The cats are at positions 2 (Cat A) and 5 (Cat B), and the mouse is at position 4. Cat B, at position 5 will arrive first since it is only 1 unit away while the other is 2 units away. Return 'Cat B'.
 
-
 // Input Format
 // Three space-separated integers describing the respective values of:
 // x (cat A's location)
-// y (cat B's location) 
+// y (cat B's location)
 // z (mouse C's location)
 
 // Sample Input
@@ -40,13 +39,16 @@
 // if the same, print Mouse C
 // if not, print Cat A or Cat B, respectively
 function catAndMouse(x, y, z) {
+  xCatADistance = Math.abs(z - x);
+  yCatBDistance = Math.abs(z - y);
 
-
-
-
-
-
-
+  if (xCatADistance < yCatBDistance) {
+    return "Cat A";
+  } else if (xCatADistance > yCatBDistance) {
+    return "Cat B";
+  } else {
+    return "Mouse C";
+  }
 }
 
-console.log(catAndMouse(1,2,3))
+console.log(catAndMouse(1, 3, 2));
