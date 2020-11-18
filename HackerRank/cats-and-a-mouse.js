@@ -39,8 +39,8 @@
 // if the same, print Mouse C
 // if not, print Cat A or Cat B, respectively
 function catAndMouse(x, y, z) {
-  xCatADistance = Math.abs(z - x);
-  yCatBDistance = Math.abs(z - y);
+  let xCatADistance = Math.abs(z - x);
+  let yCatBDistance = Math.abs(z - y);
 
   if (xCatADistance < yCatBDistance) {
     return "Cat A";
