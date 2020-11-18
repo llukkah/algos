@@ -15,7 +15,6 @@
 // The first line contains an integer n , the number of socks represented in  ar.
 // The second line contains  n space-separated integers describing the colors  ar[i] of the socks in the pile.
 
-
 // Output Format
 // Return the total number of matching pairs of socks that Alex can sell.
 
@@ -35,14 +34,15 @@
 // if not, continue anyway
 
 function sockMerchant(n, ar) {
-let count = 0;
-
-
-
-
-
-
-
+  let count = 0;
+  ar.sort();
+  for (let i = 0; i < n; i++) {
+    if (ar[i] == ar[i + 1]) {
+      i++;
+      count += 1;
+    }
+  }
+  return count;
 }
 
-console.log(sockMerchant(9, [10, 20, 20, 10, 10, 30, 50, 10, 20]))
+console.log(sockMerchant(9, [10, 20, 20, 10, 10, 30, 50, 10, 20]));
