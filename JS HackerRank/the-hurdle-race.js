@@ -19,22 +19,39 @@
 // int: the minimum number of doses required, always 0 or more
 
 // Input Format
-// n = the number of hurdles
 // k = the maximum height the character can jump naturally.
-// The second line contains n space-separated integers height[i]  where 0 <= i < n.
+// The second line contains  integers height[i]  where 0 <= i < n.
 
 // Constraints
 // 1 <= n, k <= 100
 // 1 <= height[i] <= 100
 
 // Sample Input
-// 5 4
+// 4
 // 1 6 3 5 2
 // Sample Output 0
 // 2
 
 // Sample Input 1
-// 5 7
+// 7
 // 2 5 4 5 2
 // Sample Output 1
 // 0
+
+
+function hurdleRace(k, height) {
+    let count = 0
+    for (let i = 0; i <= height.length; i += 1) {
+        if (height[i] > k ) {
+            console.log(height[i])
+            count++
+        } else {
+            continue
+        }
+    }
+    return count
+
+
+
+}
+console.log(hurdleRace(4, [1, 6, 3, 5, 2]))
