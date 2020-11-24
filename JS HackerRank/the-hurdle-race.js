@@ -43,15 +43,9 @@ function hurdleRace(k, height) {
     let count = 0
     for (let i = 0; i <= height.length; i += 1) {
         if (height[i] > k ) {
-            console.log(height[i])
             count++
-        } else {
-            continue
-        }
+        } 
     }
     return count
-
-
-
 }
-console.log(hurdleRace(4, [1, 6, 3, 5, 2]))
+console.log(hurdleRace(7, [2, 5, 4, 5, 2]))
