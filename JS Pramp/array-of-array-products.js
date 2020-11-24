@@ -23,3 +23,24 @@
 // [input] array.integer arr
 // 0 ≤ arr.length ≤ 20
 // [output] array.integer
+
+
+//PSEUDOCODE
+//loop through input to find i
+//find product of all indexes except current index
+//return array of integers
+
+function arrayOfArrayProducts(arr) {
+
+
+
+
+
+
+
+
+
+
+}
+
+console.log(arrayOfArrayProducts([8, 10, 2])) // output - 20, 16, 80
