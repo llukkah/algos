@@ -24,19 +24,11 @@
 function angryProfessor(k, a) {
     let counter = 0;
     let sortedArr = a.sort(function(a,b) {return a-b})
-    // console.log(sortedArr)
     for (let i = 0; i <= sortedArr.length; i += 1) {
-        // console.log(sortedArr[i])
         if (sortedArr[i] < 0 || sortedArr[i] === 0) {
             counter += 1;
-            // console.log('sortedArr i = ' + sortedArr[i])
-            // console.log('counter = ' + counter)
-        // } if(counter >= k) {
-        //     return 'NO'
-        // } else {
-        //     return 'YES'
         }
-                } if(counter >= k) {
+        } if(counter >= k) {
             return 'NO'
         } else {
             return 'YES'
