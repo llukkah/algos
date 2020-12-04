@@ -78,7 +78,7 @@ var moveZerosToEnd = function(arr) {
   /*
   Two Pointers
   Time O(n)
-  Space O(1)
+  Space O(1) since we're manipulating the array
   
   slow = 0
   fast = 0
