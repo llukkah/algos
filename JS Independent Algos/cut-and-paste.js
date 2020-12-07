@@ -8,7 +8,7 @@
 /////////The output should be a new array./////////
 //////////////////////////////////////////////////
 const cutAndPaste = (arr, num) => {
-    let arrSave = arr.slice(0, num);
-    arr.splice(0, num);
-    return arr.concat(arrSave);
-  };
+  let arrSave = arr.slice(0, num);
+  arr.splice(0, num);
+  return arr.concat(arrSave);
+};

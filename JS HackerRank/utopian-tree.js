@@ -17,17 +17,17 @@ if n odd is an number it will return after a spring cycle
 if n is an even number return after a summer cycle
 */
 function utopianTree(n) {
-    let growth = 1;
-    for (let i = 0; i < n; i++){
-      let spring = growth * 2
-      let summer = spring + 1
-      growth = summer
-      i++
-    }
-    if (n % 2 !== 0) {
-      return growth -1 
-    } else {
-      return growth
-    }
+  let growth = 1;
+  for (let i = 0; i < n; i++) {
+    let spring = growth * 2;
+    let summer = spring + 1;
+    growth = summer;
+    i++;
   }
-  console.log(utopianTree(4))
+  if (n % 2 !== 0) {
+    return growth - 1;
+  } else {
+    return growth;
+  }
+}
+console.log(utopianTree(4));

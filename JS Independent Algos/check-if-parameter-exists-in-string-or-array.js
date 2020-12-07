@@ -5,6 +5,5 @@
 //////////////////////////////////////////////////////////////////
 
 const doesInclude = (data, x) => {
-    return data.includes(x);
-    
-  }
+  return data.includes(x);
+};

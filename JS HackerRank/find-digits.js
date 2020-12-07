@@ -23,22 +23,17 @@
 // INPUT FORMAT
 // n = integer to examine.
 
-
 function findDigits(n) {
-let digitArray = n.toString()
-let count = 0
-// console.log(digitArray)
-for(let i = 0; i <= digitArray.length; i +=1) {
+  let digitArray = n.toString();
+  let count = 0;
+  for (let i = 0; i <= digitArray.length; i += 1) {
     if (n % digitArray[i] === 0) {
-        count++
+      count++;
     }
-    // console.log(digitArray[i])
-}
-return count
-
+  }
+  return count;
 }
 
-
-console.log(findDigits(1012)) // 3
-console.log(findDigits(124))  // 3
-console.log(findDigits(12))   // 2 
+console.log(findDigits(1012)); // 3
+console.log(findDigits(124)); // 3
+console.log(findDigits(12)); // 2
