@@ -25,25 +25,24 @@
 // 0 ≤ arr.length ≤ 20
 // [output] array.integer
 
-
 //PSEUDOCODE
 //loop through input to find i
 //find product of all indexes except current index
 //return array of integers
 
 function arrayOfArrayProducts(arr) {
-let result = [];
-for (let i = 0; i < arr.length; i += 1) {
+  let result = [];
+  for (let i = 0; i < arr.length; i += 1) {
     let product = 1;
     for (let j = 0; j < arr.length; j += 1) {
-        if (arr[i] === arr[j]) {
-            continue;
-        }
-        product = product*arr[j]
+      if (arr[i] === arr[j]) {
+        continue;
+      }
+      product = product * arr[j];
     }
-    result.push(product)
-}
-return result
+    result.push(product);
+  }
+  return result;
 }
 
-console.log(arrayOfArrayProducts([8, 10, 2])) // output - 20, 16, 80
+console.log(arrayOfArrayProducts([8, 10, 2])); // output - 20, 16, 80

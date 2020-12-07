@@ -11,45 +11,46 @@
 // push  - end of array
 // return original array
 
-
 function moveZerosToEnd(arr) {
-	// your code goes here
-  for (let i=0; i <= arr.length; i += 1) {
+  // your code goes here
+  for (let i = 0; i <= arr.length; i += 1) {
     if (arr[i] === 0) {
-      arr.splice(i, 1)
-      arr.push(0)
-      i -= 1 
-    } else { 
-      continue
+      arr.splice(i, 1);
+      arr.push(0);
+      i -= 1;
+    } else {
+      continue;
     }
   }
-   return arr
+  return arr;
 }
 
+var moveZerosToEnd = function (arr) {
+  let slow = 0;
+  let fast = 0;
 
-var moveZerosToEnd = function(arr) {
-    let slow = 0
-    let fast = 0
-    
-    while(fast < arr.length) {
-      if (arr[slow] === arr[fast]) { // if they match move
-        fast++
-      } else if (arr[slow] !== 0) { // slow isn't zero, move
-        slow++
-      } else if (arr[fast] === 0) { // fast is zero, move
-        fast++
-      } else if (arr[slow] === 0 && arr[fast] !== 0) {
-        [arr[slow], arr[fast]] = [arr[fast], arr[slow]] // swap values
-        slow++
-        fast++
-      }
+  while (fast < arr.length) {
+    if (arr[slow] === arr[fast]) {
+      // if they match move
+      fast++;
+    } else if (arr[slow] !== 0) {
+      // slow isn't zero, move
+      slow++;
+    } else if (arr[fast] === 0) {
+      // fast is zero, move
+      fast++;
+    } else if (arr[slow] === 0 && arr[fast] !== 0) {
+      [arr[slow], arr[fast]] = [arr[fast], arr[slow]]; // swap values
+      slow++;
+      fast++;
     }
-    return arr
-  };
+  }
+  return arr;
+};
 
-  console.log(moveZerosToEnd([0,0,3]), [3,0,0])
-  
-  /*
+console.log(moveZerosToEnd([0, 0, 3]), [3, 0, 0]);
+
+/*
   Two Pointers
   Time O(n)
   Space O(1)
