@@ -24,48 +24,52 @@
 //       }
 //     }
 //     // console.log(chunked_arr);
-  
+
 //   }
 //     chunk(arr, 2);
 
-    function splitAllWays(result, left, right){
-    result.push(left.concat(right));
-    //document.write(left.concat(right) + '<br />');
+function splitAllWays(result, left, right) {
+  result.push(left.concat(right));
+  //document.write(left.concat(right) + '<br />');
 
-    // If we still have chars to work with in the right side then keep splitting
-    if (right.length > 1){
-      // For each combination left/right split call splitAllWays()
-      for(var i = 1; i < right.length; i++){
-        splitAllWays(result, left.concat(right.substring(0, i)), right.substring(i));
-      }
+  // If we still have chars to work with in the right side then keep splitting
+  if (right.length > 1) {
+    // For each combination left/right split call splitAllWays()
+    for (var i = 1; i < right.length; i++) {
+      splitAllWays(
+        result,
+        left.concat(right.substring(0, i)),
+        right.substring(i)
+      );
     }
+  }
 
-    // Return result
-    return result;
+  // Return result
+  return result;
   // };
 
   var str = "123456";
   var ans = splitAllWays([], [], str);
-  }
+}
 //   //S = '1262'
-  // decodeVariations('1262');
+// decodeVariations('1262');
 
-    // function splitAllWays(result, left, right){
-    // Push current left + right to the result list
-  //   result.push(left.concat(right));
-  //   //document.write(left.concat(right) + '<br />');
+// function splitAllWays(result, left, right){
+// Push current left + right to the result list
+//   result.push(left.concat(right));
+//   //document.write(left.concat(right) + '<br />');
 
-  //   // If we still have chars to work with in the right side then keep splitting
-  //   if (right.length > 1){
-  //     // For each combination left/right split call splitAllWays()
-  //     for(var i = 1; i < right.length; i++){
-  //       splitAllWays(result, left.concat(right.substring(0, i)), right.substring(i));
-  //     }
-  //   }
+//   // If we still have chars to work with in the right side then keep splitting
+//   if (right.length > 1){
+//     // For each combination left/right split call splitAllWays()
+//     for(var i = 1; i < right.length; i++){
+//       splitAllWays(result, left.concat(right.substring(0, i)), right.substring(i));
+//     }
+//   }
 
-  //   // Return result
-  //   return result;
-  // };
+//   // Return result
+//   return result;
+// };
 
-  // var str = "123456";
-  // var ans = splitAllWays([], [], str);
+// var str = "123456";
+// var ans = splitAllWays([], [], str);

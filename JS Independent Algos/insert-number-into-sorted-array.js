@@ -8,9 +8,8 @@
 ////////////////representing the index number.////////////////////
 //////////////////////////////////////////////////////////////////
 const getIndexToInsert = (arr, num) => {
-    arr.push(num);
-    let sortArr = arr.sort((a, b) => a - b);
-    return sortArr.indexOf(num);
-  };
-  console.log(getIndexToInsert([40, 60, 5, 322, 48, 83], 80));
-  
+  arr.push(num);
+  let sortArr = arr.sort((a, b) => a - b);
+  return sortArr.indexOf(num);
+};
+console.log(getIndexToInsert([40, 60, 5, 322, 48, 83], 80));

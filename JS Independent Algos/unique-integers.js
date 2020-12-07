@@ -6,8 +6,8 @@
 ///////////////  (the numbers that are **not** in both arrays).//////////
 ////////////////////////////////////////////////////////////////////////
 const arrDifferences = (arr1, arr2) => {
-    let arr = [];
-    
+  let arr = [];
+
   for (let i = 0; i < arr1.length; i++) {
     if (arr2.indexOf(arr1[i]) === -1) {
       arr.push(arr1[i]);
@@ -19,6 +19,5 @@ const arrDifferences = (arr1, arr2) => {
     }
   }
   return arr;
-  }
-  console.log(arrDifferences([1, 44, 2, 3, 5], [33, 1, 2, 3, 4, 5]))
-  
+};
+console.log(arrDifferences([1, 44, 2, 3, 5], [33, 1, 2, 3, 4, 5]));

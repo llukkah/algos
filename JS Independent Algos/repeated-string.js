@@ -5,10 +5,10 @@
 //////////////////////////////////////////////////
 
 const repeatString = (str, num) => {
-    let repeatedString = "";
-    while (num > 0) {
-      repeatedString += str;
-      num--;
-    }
-    return repeatedString;
+  let repeatedString = "";
+  while (num > 0) {
+    repeatedString += str;
+    num--;
   }
+  return repeatedString;
+};
