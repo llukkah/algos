@@ -38,16 +38,31 @@
 // Per the library's fee structure, we know that our fine will be 15 Hackos x (# of days late). We then print the result of 15 x (d1-d2) = 15 x (9 - 6) = 45 as our output.
 
 function libraryFine(d1, m1, y1, d2, m2, y2) {
-    if (y2 != y1) {
-        return '10000'
-    }
-    if 
+//   if (y2 !== y1) {
+//     return "10000";
+//   }
+//   if (y2 == y1 && m2 !== m1) {
+//     return 500 * (m1 - m2);
+//   }
+//   if (y2 == y1 && m2 == m1 && d2 !== d1) {
+//     return 15 * (d1 - d2);
+//   }
+//   if (y2 == y1 && m2 == m1 && d2 == d1) {
+//     return 0;
+//   }
+//   if (y2 == y1 && m2 == m1 && d2 > d1) {
+//     return 0;
+//   }
 
+  if (y1 < y2) return 0;
+  if (y1 > y2) return 10000;
 
+  if (m1 < m2) return 0;
+  if (m1 > m2) return (m1 - m2) * 500;
 
-
-
-
+  if (d1 > d2) return (d1 - d2) * 15;
+  return 0;
 }
 
-console.log(libraryFine(9, 6, 2015, 6, 6, 2015)) //45
+// console.log(libraryFine(9, 6, 2015, 6, 6, 2015)) //45
+console.log(libraryFine(6, 6, 2015, 9, 6, 2015)); //0
