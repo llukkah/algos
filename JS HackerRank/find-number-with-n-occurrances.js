@@ -10,3 +10,11 @@
 // Assume that the array contains numbers which will result in only one selection.
 // Be sure to return the number not a new array of that number.Write
 
+function findNumberWithNOccurances(numbers, n) {
+  let count = numbers.reduce((a, b) => ((a[b] = (a[b] || 0) + 1), a), {});
+  return Object.keys(count).find((key) => count[key] === n);
+}
+
+console.log(
+  findNumberWithNOccurances([10, 20, 20, 5, 5, 5, 20, 10, 2, 20, 100], 4)
+);
