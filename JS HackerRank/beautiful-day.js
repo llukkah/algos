@@ -7,16 +7,13 @@
 
 // Given a range of numbered days,[i...j]  and a number k, determine the number of days in the range that are beautiful. Beautiful numbers are defined as numbers where |i - reverse(i)| is evenly divisible by k. If a day's value is a beautiful number, it is a beautiful day. Return the number of beautiful days in the range.
 
-// beautifulDays has the following parameter(s):
+// INPUT FORMAT
 // int i: the starting day number
 // int j: the ending day number
 // int k: the divisor
 
-// RETURNS
+// OUTPUT FORMAT
 // int: the number of beautiful days in the range
-
-// INPUT FORMAT
-// A single line of three space-separated integers describing the respective values of i, j, and k.
 
 // SAMPLE INPUT
 // 20 23 6
