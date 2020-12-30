@@ -1,18 +1,16 @@
-//https://www.hackerrank.com/challenges/a-very-big-sum/problem
+// https://www.hackerrank.com/challenges/a-very-big-sum/problem
 
 // FUNCTION DESCRIPTION
-// aVeryBigSum has the following parameter(s):
-// int ar[n]: an array of integers .
+// Calculate and print the sum of the elements in an array, keeping in mind that some of those integers may be quite large.
 
 // RETURN
 // long: the sum of all array elements
 
 // INPUT FORMAT
-// The first line of the input consists of an integer n.
-// The next line contains n space-separated integers contained in the array.
+// int ar[n]: an array of integers .
 
 // OUTPUT FORMAT
-// Return the integer sum of the elements in the array.
+// long: the sum of all array elements
 
 // CONSTRAINTS
 // 1 <= n <= 10
