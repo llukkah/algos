@@ -8,7 +8,7 @@
 // 20
 
 // Assume that the array contains numbers which will result in only one selection.
-// Be sure to return the number not a new array of that number.Write
+// Be sure to return the number not a new array of that number.
 
 function findNumberWithNOccurances(numbers, n) {
   let count = numbers.reduce((a, b) => ((a[b] = (a[b] || 0) + 1), a), {});
