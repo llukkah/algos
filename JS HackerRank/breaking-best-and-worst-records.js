@@ -1,4 +1,6 @@
 // https://www.hackerrank.com/challenges/breaking-best-and-worst-records/problem
+
+// FUNCTION DESCRIPTION
 // Maria plays college basketball and wants to go pro. Each season she maintains a record of her play. She tabulates the number of times she breaks her season record for most points and least points in a game. Points scored in the first game establish her record for the season, and she begins counting from there.
 
 // For example, assume her scores for the season are represented in the array scores = [12, 24, 10, 24]. Scores are in the same order as the games played. She would tabulate her results as follows:
@@ -13,8 +15,7 @@
 // Given the scores for a season, find and print the number of times Maria breaks her records for most and least points scored during the season.
 
 // INPUT FORMAT
-// The first line contains an integer n, the number of games.
-// The second line contains n space-separated integers describing the respective values of score0, score1, .... scote n-1.
+// scores: an array of integers
 
 // OUTPUT FORMAT
 // Print two space-seperated integers describing the respective numbers of times the best (highest) score increased and the worst (lowest) score decreased.
