@@ -1,5 +1,46 @@
 // https://www.hackerrank.com/challenges/the-time-in-words/problem
 
+// FUNCTION DESCRIPTION
+// Given the time in numerals we may convert it into words, as shown below:
+// 5:00 --> five o'clock
+// 5:01 --> one minute past five
+// 5:10 --> ten minutes past five
+// 5:15 --> quarter past five
+// 5:30 --> half past five
+// 5:40 --> twenty minutes to six
+// 5:45 --> quarter to six
+// 5:47 --> thirteen minutes to six
+// 5:28 --> twenty eight minutes past five
+
+// At minutes = 0, use 'o'clock'.
+// For 1 <= minutes <= 30, use 'past'
+// For 30 < minutes, use 'to'
+
+// INPUT FORMAT
+// int h: the hour of the day
+// int m: the minutes after the hour
+
+// OUTPUT FORMAT
+// string: a time string as described
+
+// Sample Input 0
+// 5
+// 47
+// Sample Output 0
+// thirteen minutes to six
+
+// Sample Input 1
+// 3
+// 00
+// Sample Output 1
+// three o' clock
+
+// Sample Input 2
+// 7
+// 15
+// Sample Output 2
+// quarter past seven
+
 //PESUDOCODE
 //make words array to push each number / word in
 //convert number to words/string
