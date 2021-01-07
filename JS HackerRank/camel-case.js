@@ -33,11 +33,9 @@
 // The
 // Editor
 
-// PSEUDOCODE
-// find & return number of capital letters in string, then add 1
-
 function camelcase(s) {
-  return s;
+  let uppercase = s.split(/[A-Z]/).length;
+  return uppercase;
 }
 
 console.log(camelcase("saveChangesInTheEditor"));
